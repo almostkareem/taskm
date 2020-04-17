@@ -1,0 +1,12 @@
+{
+  "name": "@cashmeer/taskm",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "private": false,
+  "scripts": {},
+  "dependencies": {
+    "sequelize": "^5.18.4",
+    "sqlite3": "^4.1.1"
+  }
+}
