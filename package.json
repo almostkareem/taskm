@@ -8,5 +8,6 @@
   "dependencies": {
     "sequelize": "^5.18.4",
     "sqlite3": "^4.1.1"
-  }
+  },
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
 }
