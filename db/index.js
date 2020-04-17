@@ -20,14 +20,13 @@ class DB {
   init(options = {}){
     const {isPurge = false} = options
     const dbOptions = isPurge ? { force: true } : {}
-    // return this.sequelize.sync({ force: true })
 
     if(isPurge) {
-      console.log('[INFO] going to purge')
+      console.log('[+] Going to purge')
     }
 
     return this.sequelize.sync(dbOptions).then(() => {
-      console.log(`Database & tables created!`)
+      console.log(`[+] Database & tables initialized!`)
       return
     })
   }
