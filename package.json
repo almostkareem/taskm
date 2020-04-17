@@ -1,5 +1,5 @@
 {
-  "name": "@cashmeer/taskm",
+  "name": "@almostkareem/taskm",
   "version": "0.0.1",
   "main": "index.js",
   "license": "MIT",
@@ -9,5 +9,5 @@
     "sequelize": "^5.18.4",
     "sqlite3": "^4.1.1"
   },
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
+  "repository": "almostkareem/taskm"
 }
