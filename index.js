@@ -38,7 +38,9 @@ class Controller {
   }
 
   getTaskById(id) {
-    return this.DB.TaskModel().findOne({ where: { id } })
+    const res = this.DB.TaskModel().findOne({ where: { id } });
+    if (res[0] !== 1) return this.DB.TaskModel().findOne({ where: { sourceId: id } });
+    return res
   }
 
   getFirstRandom(condition = {}) {
